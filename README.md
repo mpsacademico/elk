@@ -2,6 +2,10 @@
 
 Apontamentos e exemplos relacionados a plataforma Elastic Stack
 
+### Logstash
+
+- **basico.conf** - entrada e saída do stdin e stdout
+
 ## Licença
 
 ```

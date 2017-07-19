@@ -1,0 +1,35 @@
+quantidade de arquivos de dados
+ls -l *.Txt | wc -l
+213
+
+descoberta da quantidade de linhas de cada arquivo
+wc -l *.Txt
+--
+299894 total
+
+quantidade de arquivos que possuem 1442 linhas
+(ideal: 2 de cabeçalho e 1440 registros)
+wc -l *.Txt | grep 1442 | wc -l
+177
+
+quantidade de arquivos que não possuem 1442 linhas
+echo $((213-177))
+36
+
+quais arquivos contêm “No answer”
+grep "No answer" *.Txt -l
+--
+
+quantos registros possuem “No answer”
+grep "No answer" *.Txt | wc -l
+668
+
+dias sem coleta
+echo $((358-213))
+145
+
+
+
+
+-- saída truncada
+

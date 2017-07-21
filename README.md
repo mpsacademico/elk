@@ -38,3 +38,7 @@ Apontamentos e exemplos relacionados a plataforma Elastic Stack.
 - **SubDates**
 	- subdates.conf - configuração Logstash
 	- subdates.csv - dados gerados pelo programa `subdates.py`
+
+## Referências
+
+CHHAJED, Saurabh. **Learning ELK Stack.** Birmingham: Packt Publishing Ltd, 2015. 206 p.

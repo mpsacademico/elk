@@ -18,11 +18,11 @@ Apontamentos e exemplos relacionados a plataforma Elastic Stack
 
 ### Elasticsearch
 
-- listando todos os índices disponíveis
+- listar todos os índices disponíveis
 
 `GET http://localhost:9200/_cat/indices?v`
 
-- listando todos os nodes no cluster
+- listar todos os nodes no cluster
 
 `GET http://localhost:9200/_cat/nodes?v`
 
@@ -33,12 +33,12 @@ Apontamentos e exemplos relacionados a plataforma Elastic Stack
 - inserir um documento em um índice
 
 `PUT http://localhost:9200/radar/r2s_umb_id1/1?pretty`
-´´´Javascript
+```Javascript
 {
 	"f1": "v1"
 
 }
-´´´
+```
 
 
 

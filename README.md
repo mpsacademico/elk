@@ -4,6 +4,8 @@ Apontamentos e exemplos relacionados a plataforma Elastic Stack
 
 ### Exemplos
 
+#### Logstash
+
 - **basico.conf** - entrada stdin para a saída stdout
 - **elasticsearch.conf** - entrada stdin para o Elasticsearch
 - **mongodb.conf** - entrada stdin gravada no MongoDB
@@ -13,3 +15,11 @@ Apontamentos e exemplos relacionados a plataforma Elastic Stack
 - **SubDates**
 	- subdates.conf - configuração Logstash
 	- subdates.csv - dados gerados pelo programa `subdates.py`
+
+### Elasticsearch
+
+- listando todos os índices disponíveis
+
+`GET http://localhost:9200/_cat/indices?v`
+
+

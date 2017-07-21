@@ -22,4 +22,23 @@ Apontamentos e exemplos relacionados a plataforma Elastic Stack
 
 `GET http://localhost:9200/_cat/indices?v`
 
+- listando todos os nodes no cluster
+
+`GET http://localhost:9200/_cat/nodes?v`
+
+- criar um índice
+
+`PUT http://localhost:9200/radar?pretty`
+
+- inserir um documento em um índice
+
+`PUT http://localhost:9200/radar/r2s_umb_id1/1?pretty`
+´´´Javascript
+{
+	"f1": "v1"
+
+}
+´´´
+
+
 

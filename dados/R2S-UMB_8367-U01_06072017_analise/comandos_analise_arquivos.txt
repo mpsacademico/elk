@@ -16,9 +16,25 @@ quantidade de arquivos que não possuem 1442 linhas
 echo $((213-177))
 36
 
-quais arquivos contêm “No answer”
+quais arquivos contêm "Incomplete frame" - IF
+grep "Incomplete frame" *.Txt -l
+2017-02-27Values.Txt
+2017-02-28Values.Txt
+2017-03-01Values.Txt
+2017-03-06Values.Txt
+
+quais arquivos contêm “No answer” - NA
 grep "No answer" *.Txt -l
---
+2017-01-02Values.Txt
+2017-02-02Values.Txt
+2017-02-13Values.Txt
+2017-02-27Values.Txt
+2017-02-28Values.Txt
+2017-03-01Values.Txt
+2017-03-05Values.Txt
+2017-03-06Values.Txt
+2017-04-11Values.Txt
+2017-04-19Values.Txt
 
 quantos registros possuem “No answer”
 grep "No answer" *.Txt | wc -l

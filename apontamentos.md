@@ -11,3 +11,12 @@
   - formato de logs não padronizado: linha, data/hora, informações
   - logs descentralizados: localizados em diferentes servidores e componentes
   - conhecimento específico requerido: necessário conhecimento e acesso aos logs
+
+## ELK Stack
+
+- Plataforma completa para análise de logs, sendo uma combinação de três aplicacações open source:
+  - Elasticsearch: permite indexação dinâmica, encontra dados consultados muito rapidamente
+  - Logstash: coleta, trata e encaminha os dados com várias facilidades de tratamento entre outros
+  - Kibana: ferramenta Web (HTML e Javascrip) que usa dados indexados no Elasticsearch para exibir gráficos
+  
+  

@@ -18,5 +18,36 @@
   - Elasticsearch: permite indexação dinâmica, encontra dados consultados muito rapidamente
   - Logstash: coleta, trata e encaminha os dados com várias facilidades de tratamento entre outros
   - Kibana: ferramenta Web (HTML e Javascrip) que usa dados indexados no Elasticsearch para exibir gráficos
+    - discover (exploração interativa de dados com filtros), visualize (gráficos, métricas, mapas), dashboard (conjunto de visualizações), settings (ajustes, create scripted fields)
   
-  
+## Instalação
+
+- Requisito: Java runtime (Java 7) `java -version`
+- bin/elasticsearch `curl 'http://localhost:9200/?pretty'`
+  - configurações: elasticsearch.yml e logging.yml (network address, paths, cluster name, node name)
+- bin/logstash -e 'input { stdin { } } output { stdout { } }' OR bin/logstash -f arquivo.conf (configuration files are in the JSON format)
+- bin/kibana acessar no navegador em http://localhost:5601
+  - configurações config/kibana.yml
+
+## Logstash plugins
+
+- Input plugin
+  - file: strems log events from a file
+  - stdin: " standard input
+  - syslog: messages over the network
+  - elasticsearch: based on results of a search query
+  - redis, ganglia, lumberjack, eventlog, s3
+- Filters plugin
+  - date: parse date fields
+  - drop: drops everything that matches the filter condition
+  - grok: parse unstructured data from logs to structured format
+  - mutate: helps rename, remove, modify, replace fields in events
+  - multiline, dns, geoip
+- Output plugin
+  - file: writes events to a file on disk
+  - e-mail: sends an e-mail
+  - elasticsearch: stores output to the Elasticsearch cluster
+  - stdout: standard output
+  - redis, mongodb, kafka
+
+OBS: para informações mais avançadas sobre configurações verificar a documentação
